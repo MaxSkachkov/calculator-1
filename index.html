@@ -1,47 +1,133 @@
-  
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Индивидуальные GPT-ассистенты для вашего бизнеса</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .plans {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .cta {
+      background: #0057d9;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .cta h2 {
+      margin: 0 0 1rem;
+    }
+    .cta a {
+      display: inline-block;
+      background: white;
+      color: #0057d9;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
 </head>
-
 <body>
-    
-    <div class="min-h-screen bg-gray-700 flex items-center justify-center">
+  <header>
+    <h1>GPT-Ассистенты на заказ для вашего бизнеса</h1>
+    <p>Умные помощники, которые работают за вас 24/7</p>
+  </header>
 
-  <!-- calculator goes here -->
-  <div class="bg-gray-800 border-2 border-gray-900 shadow-2xl rounded-lg">
+  <div class="section">
+    <h2>Что мы предлагаем</h2>
+    <p>
+      Создаём индивидуальных AI-ассистентов, заточенных под вашу сферу деятельности. Автоматизируйте общение с клиентами, ответы на часто задаваемые вопросы, сопровождение продуктов или внутренние процессы.
+    </p>
+  </div>
 
-    <!-- form goes here -->
-    <form class="border-b-2 border-gray-900">
-      <input type="number" class="bg-transparent p-8 rounded-t-lg outline-none focus:bg-gray-700 text-3xl text-right text-white font-mono">
-    </form>
-
-    <!-- button goes here -->
-    <div class="p-6 text-gray-800 grid grid-cols-4 gap-5 text-xl">
-      <button class="font-mono col-span-3 bg-blue-500 hover:bg-blue-600 rounded-full p-5">C</button>
-      <button class="font-mono bg-purple-600 hover:bg-yellow-500 rounded-full p-5">&divide;</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">1</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">2</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">3</button>
-      <button class="font-mono bg-purple-600 hover:bg-yellow-500 rounded-full p-5">&times;</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">4</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">5</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">6</button>
-      <button class="font-mono bg-purple-600 hover:bg-yellow-500 rounded-full p-5">&minus;</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">7</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">8</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">9</button>
-      <button class="font-mono bg-purple-600 hover:bg-yellow-500 rounded-full p-5">&plus;</button>
-      <button class="font-mono bg-gray-400 hover:bg-yellow-500 rounded-full p-5">0</button>
-      <button class="font-mono col-span-3 bg-blue-500 hover:bg-blue-600 rounded-full p-5">=</button>
+  <div class="section">
+    <h2>Примеры ассистентов</h2>
+    <div class="plans">
+      <div class="card">
+        <h3>Бухгалтерский помощник</h3>
+        <p>Отвечает на вопросы клиентов о документах, сроках, налогах. Подходит для бухгалтеров и консалтинга.</p>
+      </div>
+      <div class="card">
+        <h3>HR GPT</h3>
+        <p>Объясняет правила компании, адаптацию, кадровые процедуры. Помогает сотрудникам быстрее включаться в работу.</p>
+      </div>
+      <div class="card">
+        <h3>Ассистент интернет-магазина</h3>
+        <p>Помогает пользователям с выбором товаров, оформлением заказов и отслеживанием доставки.</p>
+      </div>
     </div>
   </div>
-</div>
 
+  <div class="section">
+    <h2>Тарифы</h2>
+    <div class="plans">
+      <div class="card">
+        <h3>Старт</h3>
+        <p>Настройка GPT — 100 €<br>Поддержка — 10 €/мес</p>
+      </div>
+      <div class="card">
+        <h3>Премиум</h3>
+        <p>Настройка GPT — 150 €<br>Поддержка — 20 €/мес<br>+ Ежемесячные улучшения</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Хочу GPT для своего дела</h2>
+    <a href="mailto:your@email.com">Оставить заявку</a>
+  </div>
+
+  <footer>
+    &copy; 2025. Создано с любовью и ИИ.
+  </footer>
 </body>
 </html>
